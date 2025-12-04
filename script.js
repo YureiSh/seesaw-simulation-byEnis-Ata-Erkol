@@ -15,11 +15,8 @@ const angleParam = document.getElementById("angleParam");
 let previewDiv = null;
 weightParam.innerHTML = `${kg}`
 
-function reset(){} //not functional for now
-
-function myFunction(event) {
-    x = event.offsetX; // Değişen x takibi
-    document.getElementById("demo").innerHTML = "The x-coordinate is: " + x;
+function previewOffset(event) {
+    x = event.offsetX;
 
     if (!previewDiv) {
         previewDiv = document.createElement("div");
@@ -32,7 +29,7 @@ function myFunction(event) {
     previewDiv.style.left = x + 210 + "px";
 }
 
-  function reset() {
+function reset() {
     left = 0;
     right = 0;
     leftT = 0;

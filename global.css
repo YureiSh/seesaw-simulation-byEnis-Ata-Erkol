@@ -36,8 +36,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
   width: 400px;
   height: 20px;
-  background: whitesmoke;
-  /*yel??*/
+  background: #ffff00;
   border: 1.5px solid #000000;
   transition: transform 0.25s ease-out;
   margin-top: 15px;
@@ -91,20 +90,6 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.weight {
-  position: absolute;
-  height: 33px;
-  width: 33px;
-  text-align: center;
-  color: #ffffff;
-  background-color: gray;
-  /*change?*/
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  transition: top 0.4s ease-out;
-}
-
 .preview {
   /* aynısı ama opacity düşük*/
   position: absolute;
@@ -119,11 +104,23 @@ body {
   opacity: 50%;
 }
 
-.weight.start-up {
-  top: calc(45% - 75px);
+.weight {
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #555;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  transition: top 0.4s ease-out;
 }
 
 
+.weight.start-up {
+  top: calc(45% - 75px);
+}
 
 .resetBtnPlc {
   padding-top: 20px;
