@@ -1,0 +1,100 @@
+body {
+  background: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e8ed;
+  max-width: 900px;
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+.seesaw-container {
+  position: relative;
+  width: 820px;
+  height: 520px;
+  background: #eef1f1;
+  border-radius: 6px;
+  border: 1px solid #e1e8edf6;
+  overflow: hidden;
+}
+
+.board {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 400px;
+  height: 20px;
+  background: whitesmoke; /*yel??*/
+  border: 1.5px solid #000000;
+  transition: transform 0.25s ease-out;
+  margin-top: 15px;
+}
+
+.clickable {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 401px;
+  height: 400px;
+}
+
+
+.pivotPoint {
+  position: absolute;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.weight {
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  text-align: center;
+  color: #ffffff;
+  background-color: gray; /*change?*/
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  transition: top 0.4s ease-out;
+}
+
+.weight.start-up {
+  top: calc(45% - 75px);
+}
+
+
+.resetBtnPlc {
+  padding-top: 20px;
+  text-align: center;
+}
+
+button {
+  min-height: 30px;
+  min-width: 40px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #eef1f1;
+}
+
+/*Preview needed-obv like the examples*/

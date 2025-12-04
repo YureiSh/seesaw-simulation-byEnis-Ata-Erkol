@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="global.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seesaw with physics</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parameters">
+            <div class="parameter">
+                <h2>Next Weight</h2>
+                <p id="weightParam">0 kg</p>
+            </div>
+            <div class="parameter">
+                <h2>Left / Right Total</h2>
+                <p id="leftRightParam">0 kg / 0 kg</p>
+            </div>
+            <div class="parameter">
+                <h2>Angle</h2>
+                <p id="angleParam">0.0 deg</p>
+            </div>
+        </div>
+        <div class="seesaw-container" onmouseleave="mouseLeave()" >
+            <div class="clickable" 
+            onclick="create()" 
+            onmousemove="myFunction(event)">
+                <div class="board"></div>
+                <div class="pivotPoint"></div>
+            </div>
+
+        </div>
+        <div class="resetBtnPlc">
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<audio id="clickSound" src="soundEffect.mp3"></audio>
+
+</html>
