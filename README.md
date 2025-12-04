@@ -1,7 +1,10 @@
 # seesaw-simulation-byEnis-Ata-Erkol 
 Seesaw simulation i did with Torque and rotation measurements, with pure HTML-CSS-JS This project is an interactive seesaw simulation using pure HTML-CSS-JS. Users can place weighted objects on a board, observe torque changes, store state using
+
 ```localStorage```
+
 , and reset the system. 
+
 🧠 Thought Process & Design Decisions 🧠 
 Starting with HTML structure I began by designing the layout directly in HTML. My initial assumption was that canvas would be the right tool for drawing the seesaw, board, pivot, and weight positions. 
 

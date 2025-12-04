@@ -32,6 +32,20 @@ function myFunction(event) {
     previewDiv.style.left = x + 210 + "px";
 }
 
+  function reset() {
+    left = 0;
+    right = 0;
+    leftT = 0;
+    rightT = 0;
+    angle = 0;
+
+    document.querySelectorAll(".weight").forEach((e) => e.remove());
+    board.style.transform = `translateX(-50%) translateY(-50%) rotate(${angle}deg)`;
+    leftRightParam.innerHTML = "0 kg / 0 kg";
+    angleParam.innerHTML = "0.00 deg";
+    localStorage.clear();
+}
+
 function mouseLeave() {
     if (document.getElementById("preview")) {
         document.getElementById("preview").remove();
